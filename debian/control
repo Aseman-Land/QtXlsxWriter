@@ -1,0 +1,29 @@
+Source: qtxlsx
+Section: libs
+Priority: optional
+Maintainer: Aseman Team <contact@aseman.co>
+Build-Depends:
+ debhelper (>= 8.0.0),
+ g++ (>= 4:4.7),
+ gcc (>= 4:4.7),
+ qtbase5-dev (>= 5.9.0),
+ qtchooser,
+ qt5-qmake,
+ qt5-default
+Standards-Version: 3.9.5
+Homepage: https://github.com/Aseman-Land/QtXlsxWriter
+Vcs-Git: https://github.com/Aseman-Land/QtXlsxWriter
+
+Package: libqt5xlsx
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: QtXlsx writer tools, 
+ It's free and released under the GPLv3 license.
+
+Package: libqt5xlsx-dev
+Section: libdevel
+Architecture: any
+Depends: libqt5xlsx (= ${binary:Version})
+Description: QtXlsx writer tools development files, 
+ It's free and released under the GPLv3 license.
